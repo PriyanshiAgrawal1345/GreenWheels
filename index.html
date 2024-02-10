@@ -679,13 +679,13 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Our Proffesional <span>Chefs</span></h2>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <h2> <span>Try</span> it Out</h2>
+          <p>Calculate how much carbon you add to environment in one day!!</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="member">
               <div class="pic"><img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
@@ -699,9 +699,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="member">
               <div class="pic"><img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
@@ -715,9 +715,22 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <div class="carbon-footprint-section">
+            <h1>Carbon Footprint Calculator</h1>
+            <div class="input-group">
+                <label for="electricity">Electricity Usage (kWh per day):</label>
+                <input type="number" id="electricity" placeholder="Enter kWh">
+            </div>
+            <div class="input-group">
+                <label for="vehicle-distance">Distance Covered by Vehicle (miles per day):</label>
+                <input type="number" id="vehicle-distance" placeholder="Enter miles">
+            </div>
+            <button onclick="calculate()">Calculate</button>
+            <div id="result"></div>
+        </div>
 
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="member">
               <div class="pic"><img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
@@ -731,7 +744,8 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+
 
         </div>
 
@@ -940,6 +954,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
