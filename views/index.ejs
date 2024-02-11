@@ -48,12 +48,28 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Choose Vehicle</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Leaderboard</a></li>
+          
+          <li><button class="nav-btn">Leaderboard</button></li>
           <li><a class="nav-link scrollto" href="#chefs">Carbon Footprint</a></li>
           <li><a class="nav-link scrollto" href="#book-a-table">Profile</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+      <script>
+        // Add event listener to the leaderboard button
+        document.querySelector(".nav-btn").addEventListener("click", function() {
+            // Navigate to the leaderboard.html file
+            window.location.href = "leaderboard.html";
+        });
+    </script>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+          <span>Not Logged In</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/auth/google">Sign in with Google</a></li>
+        </ul>
+      </li>
 
       <% if(user.email) { %>
         <li><a class="onclick" href="/logout">Logout</a></li>
@@ -69,7 +85,7 @@
         <% } %>
 
       
-      
+     
 
     </div>
   </header><!-- End Header -->
@@ -144,16 +160,15 @@
 
             <div class="content">
               <p>
-                Our platform is dedicated to transforming urban commuting into a sustainable and community driven experience. We bring a fresh perspective to mobility, focusing on reducing environmental 
-                impact, promoting public health, and enhancing 
-                personal mobility.
+                Our platform is dedicated to transforming urban commuting into a sustainable and community-driven
+                 experience.Urban commuting refers to the daily travel within cities, such as commuting to work, 
+                 school, or other destinations. Our platform aims to revolutionize this experience by making it more sustainable and 
+                 community-driven. This means that we prioritize solutions that benefit both the environment and the community of commuters.
+                 We bring a fresh perspective to mobility, focusing on reducing environmental impact, promoting public health, and enhancing 
+                 personal mobility.By leveraging innovative technologies and collaborative efforts, we aim to revolutionize the way people travel in 
+                 cities.
               </p>
-              <ul style="list-style-type:square;">
-                <li>Carpooling</li>
-                <li>Carbon Footprint Calculator</li>
-                <li>Alternative Transportation</li>
-                <li>Blog and News</li>
-            </ul>
+
             </div>
 
           </div>

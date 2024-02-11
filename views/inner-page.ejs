@@ -61,10 +61,17 @@
           <li><a class="nav-link scrollto " href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
+          <li><button class="nav-btn">Leaderboard</button></li>
           <li><a class="nav-link scrollto" href="#events">Events</a></li>
           <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <script>
+            // Add event listener to the leaderboard button
+            document.querySelector(".nav-btn").addEventListener("click", function() {
+                // Navigate to the leaderboard.html file
+                window.location.href = "leaderboard.html";
+            });
+        </script>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
