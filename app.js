@@ -55,21 +55,9 @@ passport.use(strategy);
 //////        Routes     /////////
 const indexRoute = require("./routes/index");
 const authRoute = require("./routes/auth");
-//const profileRoute = require("./routes/profile");
-// const homeRoute= require("./routes/home");
-// const fetchRoute = require("./routes/fetch");
-// const addRoute = require("./routes/addItem");
-// const chatRoute = require("./routes/chat");
-// const websiteRoute = require("./routes/website");
 
 app.use('/',indexRoute);
 app.use('/auth/google', authRoute);
-// app.use("/", profileRoute);
-// app.use("/", homeRoute);
-// app.use("/", fetchRoute);
-// app.use("/", addRoute);
-// app.use("/", chatRoute);
-// app.use("/", websiteRoute);
 
 
 
