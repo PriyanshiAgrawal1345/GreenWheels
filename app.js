@@ -22,9 +22,6 @@ app.use(
       secret: process.env.SECRET,
       resave: false,
       saveUninitialized: false,
-      // store: mongoStore.create({
-      //   mongoUrl: process.env.PASS
-      // })
     })
   );
   app.use(passport.initialize());
