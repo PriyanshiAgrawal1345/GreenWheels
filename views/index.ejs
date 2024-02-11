@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Delicious Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Delicious
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Choose Vehicle</a></li>
+          
+          <li><button class="nav-btn">Leaderboard</button></li>
+          <li><a class="nav-link scrollto" href="#chefs">Carbon Footprint</a></li>
+          <li><a class="nav-link scrollto" href="#book-a-table">Profile</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <script>
+        // Add event listener to the leaderboard button
+        document.querySelector(".nav-btn").addEventListener("click", function() {
+            // Navigate to the leaderboard.html file
+            window.location.href = "leaderboard.html";
+        });
+    </script>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+          <span>Not Logged In</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="/auth/google">Sign in with Google</a></li>
+        </ul>
+      </li>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Green Wheels</h2>
+                <p class="animate__animated animate__fadeInUp">"Instead of continuing to develop the automobile, we should think about how we can shape mobility differently in the future."<br>~Hans-Peter Dürr.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Pedal Power</h2>
+                <p class="animate__animated animate__fadeInUp">"Bicycle - environmentally friendly vehicle with health-promoting mechanics." <br>~Manfred Hinrich.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Shy Creature</h2>
+                <p class="animate__animated animate__fadeInUp">"Traffic light = shy creature that turns red when you get closer."</p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
+            <a href="https://youtu.be/nzndLUc18hg?si=YEj3Fbn4nmFB2T2z" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <p>
+                Our platform is dedicated to transforming urban commuting into a sustainable and community-driven
+                 experience.Urban commuting refers to the daily travel within cities, such as commuting to work, 
+                 school, or other destinations. Our platform aims to revolutionize this experience by making it more sustainable and 
+                 community-driven. This means that we prioritize solutions that benefit both the environment and the community of commuters.
+                 We bring a fresh perspective to mobility, focusing on reducing environmental impact, promoting public health, and enhancing 
+                 personal mobility.By leveraging innovative technologies and collaborative efforts, we aim to revolutionize the way people travel in 
+                 cities.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Whu Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Why choose <span>Our Website</span></h2>
+          <p>Unique features of our website.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>01</span>
+              <h4>Carpooling</h4>
+              <p>Matching system for 
+                users with similar 
+                travel routes to 
+                connect and 
+                carpool.
+                Real-time traffic 
+                updates and route 
+                optimization.
+                </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>02</span>
+              <h4>Carbon Footprint Calculator</h4>
+              <p>Personalized tool to 
+                calculate the carbon 
+                footprint of various 
+                transportation modes.
+                Tips and suggestions for 
+                reducing individual 
+                carbon footprint.
+                Leaderboard to 
+                incentivize low-impact 
+                choices</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>03</span>
+              <h4> Alternative Transportation</h4>
+              <p>Information and incentives 
+                for using public 
+                transportation, cycling, 
+                walking, etc.
+                Integration with local 
+                public transportation 
+                schedules and bike sharing networks.
+                Gamified challenges to 
+                encourage exploring 
+                alternative transportation 
+                options.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Whu Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+    <div class="section-title">
+      <h2>Check out best options to<span> Travel</span></h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="menu-flters">
+          <li data-filter="*" class="filter-active">Show All</li>
+          <li data-filter=".filter-starters">Car pooling</li>
+          <li data-filter=".filter-salads">Sustainable options</li>
+          <li data-filter=".filter-specialty">Electric options</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row menu-container">
+
+      <div class="col-lg-6 menu-item filter-starters">
+        <div class="menu-content">
+          <a href="#">Swift Desire</a><span>595</span>
+        </div>
+       
+      </div>
+
+      <div class="col-lg-6 menu-item filter-specialty">
+        <div class="menu-content">
+          <a href="#">Volkswagen ID.4</a><span>695</span>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 menu-item filter-starters">
+        <div class="menu-content">
+          <a href="#">Toyota Prius</a><span>795</span>
+        </div>
+      
+      </div>
+
+      <div class="col-lg-6 menu-item filter-salads">
+        <div class="menu-content">
+          <a href="#">Walking</a><span>895</span>
+        </div>
+    
+      </div>
+
+      <div class="col-lg-6 menu-item filter-specialty">
+        <div class="menu-content">
+          <a href="#">Kia Soul EV</a><span>995</span>
+        </div>
+    
+      </div>
+
+      <div class="col-lg-6 menu-item filter-starters">
+        <div class="menu-content">
+          <a href="#">Volkswagen Golf GTE</a><span>495</span>
+        </div>
+  
+      </div>
+
+      <div class="col-lg-6 menu-item filter-salads">
+        <div class="menu-content">
+          <a href="#">Cycling</a><span>995</span>
+        </div>
+    
+      </div>
+
+      <div class="col-lg-6 menu-item filter-salads">
+        <div class="menu-content">
+          <a href="#">Skating</a><span>995</span>
+        </div>
+
+      </div> 
+
+      <div class="col-lg-6 menu-item filter-specialty">
+        <div class="menu-content">
+          <a href="#">Nissan Leaf</a><span>1295</span>
+        </div>
+      
+      </div>
+      <div id="message-container" style="margin-top: 20px;"></div>
+    </div>
+
+    <!-- Element to display message -->
+    <div id="message-container"></div>
+
+  </div>
+</section>
+
+<!-- Script to add click event listener -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get all menu items
+    const menuItems = document.querySelectorAll(".menu-item");
+
+    // Add click event listener to each menu item
+    menuItems.forEach(item => {
+      item.addEventListener("click", function() {
+        // Get the points described in front of the clicked item
+        const points = this.querySelector("span").innerText;
+
+        // Create a message element
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message");
+        messageElement.textContent = points + " points are added to your profile. Yayyyy!!";
+
+        messageElement.style.padding = "10px";
+        messageElement.style.border = "1px solid #ccc";
+        messageElement.style.borderRadius = "100px";
+        messageElement.style.backgroundColor = "#74B72E";
+        messageElement.style.marginTop = "270px";
+
+        // Clear previous messages
+        document.getElementById("message-container").innerHTML = "";
+
+        // Append the message element to the message container
+        document.getElementById("message-container").appendChild(messageElement);
+      });
+    });
+  });
+</script>
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Your <span>Profile</span></h2>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Carbonfoot print Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> <span>Try</span> it Out</h2>
+          <p>Calculate how much carbon you add to environment in one day!!</p>
+        </div>
+
+        <div class="row">
+          <div class="carbon-footprint-section">
+            <h1>Carbon Footprint Calculator</h1>
+            <div class="input-group">
+                <label for="electricity">Electricity Usage (kWh per day):</label>
+                <input type="number" id="electricity" placeholder="Enter kWh">
+            </div>
+            <div class="input-group">
+                <label for="vehicle-distance">Distance Covered by Vehicle (miles per day):</label>
+                <input type="number" id="vehicle-distance" placeholder="Enter miles">
+            </div>
+            <button onclick="calculate()">Calculate</button>
+            <div id="result"></div>
+        </div>
+        </div>
+      </div>
+    </section><!-- End Carbonfoot print Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="section-title">
+          <h2><span>Distance-wise</span> Carbon Footprint</h2>
+          <p>Calculate the carbon footprint based on the distance travelled by you</p>
+        </div>
+      </div>
+
+    
+      
+      <head>
+          <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+          <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  text-align: center;
+              }
+      
+              #map {
+                  height: 400px;
+                  margin: auto;
+              }
+      
+              .input-group {
+                  margin-bottom: 10px;
+              }
+      
+              .input-group input {
+                  width: 200px;
+                  padding: 8px; /* Increased padding */
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  font-size: 16px; /* Increased font size */
+              }
+      
+              .input-group button {
+                  padding: 10px 20px; /* Increased padding */
+                  align-items: center;
+                  background-color: #4CAF50;
+                  color: white;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  font-size: 16px; /* Increased font size */
+              }
+      
+              #length, #carbonFootprint {
+                  font-size: 18px;
+                  margin-top: 10px;
+                  padding: 10px; /* Increased padding */
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  align-items: center;
+              }
+          </style>
+      </head>
+      
+          <div id="map"></div>
+          <div class="input-group">
+              <label for="startPlace">Start Place:</label>
+              <input type="text" id="startPlace">
+          </div>
+          <div class="input-group">
+              <label for="endPlace">End Place:</label>
+              <input type="text" id="endPlace">
+          </div>
+          <div class="input-group">
+              <button onclick="calculateDistance()">Calculate CarbonFootprint</button>
+          </div>
+          <p id="length"></p>
+          <p id="carbonFootprint"></p>
+      
+          <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+          <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+          <script>
+              let mapOptions = {
+                  center: [17.385044, 78.486671],
+                  zoom: 13
+              }
+      
+              let map = L.map('map', mapOptions),
+                  layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+      
+              map.addLayer(layer);
+      
+              let _polyline;
+      
+              L.Control.geocoder().addTo(map);
+      
+              async function calculateDistance() {
+                  let startPlace = document.getElementById('startPlace').value;
+                  let endPlace = document.getElementById('endPlace').value;
+      
+                  try {
+                      let startCoords = await geocodePlace(startPlace);
+                      let endCoords = await geocodePlace(endPlace);
+      
+                      if (startCoords && endCoords) {
+                          let distance = startCoords.distanceTo(endCoords);
+                          let distanceInKm = distance / 1000; // Convert meters to kilometers
+                          document.getElementById('length').innerHTML = "Distance: " + distanceInKm.toFixed(2) + " km";
+      
+                          // Calculate carbon footprint based on distance
+                          let carbonFootprint = calculateCarbonFootprint(distanceInKm);
+                          document.getElementById('carbonFootprint').innerHTML = "Carbon Footprint: " + carbonFootprint.toFixed(2) + " kg CO2";
+      
+                          // Draw a line between the two points
+                          if (_polyline) {
+                              map.removeLayer(_polyline);
+                          }
+                          _polyline = L.polyline([startCoords, endCoords], { color: 'red' }).addTo(map);
+                          document.querySelector('.leaflet-popup-content').style.color = 'white';
+                      }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        // alert('Error calculating distance. Please try again.');
+                    }
+              }
+      
+              async function geocodePlace(place) {
+                  return new Promise((resolve, reject) => {
+                      L.Control.Geocoder.nominatim().geocode(place, results => {
+                          if (results && results.length > 0) {
+                              let latlng = L.latLng(results[0].center.lat, results[0].center.lng);
+                              resolve(latlng);
+                          } else {
+                              reject('Place not found');
+                          }
+                      });
+                  });
+              }
+      
+              // Function to calculate carbon footprint based on distance
+              function calculateCarbonFootprint(distanceInKm) {
+                  // Placeholder carbon footprint calculation
+                  // This is just a simple example, you may need to replace it with a more accurate calculation
+                  return (distanceInKm * 0.5)+40; // Assuming a carbon footprint of 0.1 kg CO2 per kilometer
+              }
+          </script>
+          </div>
+        </div>
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
