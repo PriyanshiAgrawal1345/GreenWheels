@@ -11,8 +11,11 @@ const app = express();
 app.use(express.static("public"));
 app.use(express.static("uploaded_docs"));
 app.use(express.urlencoded({ extended: true }));
+app.set("views", "./views");
 app.set("view engine", "ejs");
 app.engine("ejs", ejsMate);
+app.use(express.static(__dirname + "/views")); 
+app.use("/images", express.static(__dirname + "/views/assets/img"));
 
 app.use(
     session({
