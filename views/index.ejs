@@ -55,14 +55,21 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-          <span>Not Logged In</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="/auth/google">Sign in with Google</a></li>
-        </ul>
-      </li>
+      <% if(user !== null) { %>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+            <span>Not Logged In</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/auth/google">Sign in with Google</a></li>
+          </ul>
+        </li>
+        <% } else { %>
+          <li><a class="onclick" href="/logout">Logout</a></li>
+        <% } %>
+
+      
+      
 
     </div>
   </header><!-- End Header -->
@@ -348,7 +355,7 @@
   });
 </script>
 
-    <!-- ======= Book A Table Section ======= -->
+    <!-- ======= Profile ======= -->
     <section id="book-a-table" class="book-a-table">
       <div class="container">
 
@@ -356,7 +363,7 @@
           <h2>Your <span>Profile</span></h2>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+        <form action="forms/profile.php" method="post" role="form" class="php-email-form">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -372,10 +379,6 @@
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
               <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
