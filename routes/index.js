@@ -6,9 +6,9 @@ const indexRoute= Router();
 indexRoute.get("/", (req, res) => {
     console.log(req.user);
     if (req.isAuthenticated()) {
-        res.render("index", { user: req.user });
+        res.render("index", { user: req.user , ispresent : "true"});
     } else {
-        res.render("index", { user: null });
+        res.render("index", { user: {} , ispresent : "false"});
     }
 });
 

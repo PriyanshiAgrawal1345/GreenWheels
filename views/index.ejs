@@ -55,7 +55,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <% if(user) { %>
+      <% if(user.email) { %>
         <li><a class="onclick" href="/logout">Logout</a></li>
         <% } else { %>
           <li class="dropdown">
@@ -370,7 +370,6 @@
             <div class="profile-details">
                 <div><h1 id="user-name"></h1></div>
                 <div><strong>Email:</strong> <span id="user-email"></span></div>
-                <div><strong>Phone Number:</strong> <span id="user-phone"></span></div>
                 <!-- Add more details as needed -->
             </div>
 
@@ -566,25 +565,24 @@
   <script src="assets/js/script.js"></script>
    <script>
     // Simulated user data
-    const user = {
-        name: "John Doe",
-        email: "johndoe@example.com",
-        phone: "+1234567890",
-        image: "profile-photo.jpg"
-        // Add more user data here if needed
-    };
+    // const user = {
+    //     name: "John Doe",
+    //     email: "johndoe@example.com",
+    //     phone: "+1234567890",
+    //     image: "profile-photo.jpg"
+    //     // Add more user data here if needed
+    // };
 
     // Get the elements where we want to display user data
     const userNameElement = document.getElementById("user-name");
     const userEmailElement = document.getElementById("user-email");
-    const userPhoneElement = document.getElementById("user-phone");
     const userImageElement = document.getElementById("user-image");
 
-    // Set user data dynamically
-    userNameElement.textContent = user.name;
-    userEmailElement.textContent = user.email;
-    userPhoneElement.textContent = user.phone;
-    userImageElement.src = user.image;
+        
+        userNameElement.textContent = "<%= user.name %>";
+        userEmailElement.textContent = "<%= user.email %>";
+        userImageElement.src = "<%= user.pic %>";
+    
 </script>
 
 </body>
