@@ -1203,6 +1203,7 @@ section {
 .chefs {
   background: url("../img/chefs-bg.jpg") center center no-repeat;
   background-size: cover;
+  filter: blur(0px);
   padding: 60px 0;
   position: relative;
 }
@@ -1290,6 +1291,54 @@ section {
   font-size: 16px;
   margin: 0 2px;
 }
+.carbon-footprint-section {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carbon-footprint-section h1 {
+  text-align: center;
+}
+
+.carbon-footprint-section .input-group {
+  margin-bottom: 15px;
+}
+
+.carbon-footprint-section .input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.carbon-footprint-section .input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.carbon-footprint-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carbon-footprint-section button:hover  {
+  background-color: #45a049;
+}
+
+.carbon-footprint-section #result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 
 @media (max-width: 992px) {
   .chefs .member {
